@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tienda de Ropa Deportiva</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #d8ecff;
+      color: #000000;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #0f4e61;
+      color: rgb(222, 209, 252);
+      padding: 20px;
+      text-align: center;
+    }
+
+    .banner {
+      background-image: url('Banner.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 250px;
+    }
+
+    .filter-buttons {
+      text-align: center;
+      margin: 20px;
+    }
+
+    .filter-buttons button {
+      padding: 10px 20px;
+      margin: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #0f4e61;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .filter-buttons button:hover {
+      background-color: #09414b;
+    }
+
+    .product-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+      padding: 10px;
+    }
+
+    .product-card {
+      background-color: rgb(106, 168, 184);
+      border: 3px solid #002064;
+      border-radius: 10px;
+      margin: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .product-card img {
+      width: 100%;
+      border-radius: 5px;
+      max-width: 300px;
+      margin: auto;
+    }
+
+    .product-info h3 {
+      margin: 10px 0 5px;
+    }
+
+    .product-info p {
+      margin: 5px 0;
+    }
+
+    footer {
+      background-color: #09414b;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1><b>ZoldyckSports</b></h1>
+    <h3>Ropa deportiva de alto rendimiento para atletas y entusiastas</h3>
+  </header>
+
+  <div class="banner"></div>
+
+  <div class="filter-buttons">
+    <button onclick="filtrarProductos('todos')">Todos</button>
+    <button onclick="filtrarProductos('camiseta')">Camisas</button>
+    <button onclick="filtrarProductos('short')">Shorts</button>
+    <button onclick="filtrarProductos('malla')">Mallas</button>
+    <button onclick="filtrarProductos('tenis')">Tenis</button>
+  </div>
+
+  <div class="product-container">
+
+    <!-- CAMISETAS -->
+    <div class="product-card camiseta">
+      <img src="https://th.bing.com/th/id/OIP.YWSJpIq2sYAm0CfAyxZXlgHaHa?cb=iwc1&rs=1&pid=ImgDetMain" alt="Camiseta deportiva unisex">
+      <div class="product-info">
+        <h3>Camiseta TricepSport</h3>
+        <p><strong>Marca:</strong> ZoldyckSports</p>
+        <p><strong>Precio:</strong> $160.99</p>
+        <p><strong>Talla:</strong> XS, S, M, L, XL</p>
+        <p><strong>Disponibilidad:</strong> Agotado </p>
+      </div>
+    </div>
+
+    <div class="product-card camiseta">
+      <img src="f:\Pagina Web TiendaDeportiva\Foto programaM\vatochichonX2.png" alt="Camiseta deportiva Masculina">
+      <div class="product-info">
+        <h3>Camiseta VellSport</h3>
+        <p><strong>Marca:</strong> ZoldyckSports</p>
+        <p><strong>Precio:</strong> $325.99</p>
+        <p><strong>Talla:</strong> S, M, L, XL</p>
+        <p><strong>Disponibilidad:</strong> Disponible</p>
+      </div>
+    </div>
+
+    <div class="product-card camiseta">
+      <img src="f:\Pagina Web TiendaDeportiva\Foto programaM\vatochichon.png"  atl="Camiseta deportiva Femenina">
+      <div class="product-info">
+        <h3>Camiseta KallutoSport</h3>
+        <p><strong>Marca:</strong> ZoldyckSports</p>
+        <p><strong>Precio:</strong> $267.99</p>
+        <p><strong>Talla:</strong> XS, S, M, L, XL</p>
+        <p><strong>Disponibilidad:</strong> Agotado</p>
+      </div>
+    </div>
+    <div class="product-card camiseta">
+        <img src="e:\Pagina Web TiendaDeportiva\Foto programaM\topM.jpg" alt="Camiseta deportiva unisex">
+        <div class="product-info">
+          <h3>Camiseta TricepSport</h3>
+          <p><strong>Marca:</strong> ZoldyckSports</p>
+          <p><strong>Precio:</strong> $149.99</p>
+          <p><strong>Talla:</strong> XS, S, M, L, XL</p>
+          <p><strong>Disponibilidad:</strong> Disponible </p>
+        </div>
+      </div>
+  
+      <div class="product-card camiseta">
+        <img src="e:\Pagina Web TiendaDeportiva\Foto programaM\toppM.JPG" alt="Camiseta deportiva Masculina">
+        <div class="product-info">
+          <h3>Camiseta VellSport</h3>
+          <p><strong>Marca:</strong> ZoldyckSports</p>
+          <p><strong>Precio:</strong> $296.99</p>
+          <p><strong>Talla:</strong> S, M, L, XL</p>
+          <p><strong>Disponibilidad:</strong> Disponible</p>
+        </div>
+      </div>
+  
+      <div class="product-card camiseta">
+        <img src="e:\Pagina Web TiendaDeportiva\Foto programaM\topp.jpg" alt="Camiseta deportiva Femenina">
+        <div class="product-info">
+          <h3>Camiseta KallutoSport</h3>
+          <p><strong>Marca:</strong> ZoldyckSports</p>
+          <p><strong>Precio:</strong> $269.99</p>
+          <p><strong>Talla:</strong> XS, S, M, L, XL</p>
+          <p><strong>Disponibilidad:</strong> Agotado</p>
+        </div>
+      </div>
+
+    <!-- SHORTS -->
+    <div class="product-card short">
+      <img src="e:\Pagina Web TiendaDeportiva\Foto programaM\AnabelSh.jpg" alt="Short deportivo Femenino">
+      <div class="product-info">
+        <h3>Short PhantomSport</h3>
+        <p><strong>Marca:</strong> ZoldyckSports</p>
+        <p><strong>Precio:</strong> $250.99</p>
+        <p><strong>Talla:</strong> S, M, L, XL</p>
+        <p><strong>Disponibilidad:</strong> Disponible</p>
+      </div>
+    </div>
+
+    <div class="product-card short">
+      <img src="e:\Pagina Web TiendaDeportiva\Foto programaM\sH.jpg" alt="Short deportivo Femenino">
+      <div class="product-info">
+        <h3>Short PhantomSport</h3>
+        <p><strong>Marca:</strong> ZoldyckSports</p>
+        <p><strong>Precio:</strong> $280.99</p>
+        <p><strong>Talla:</strong> S, M, L, XL</p>
+        <p><strong>Disponibilidad:</strong> Disponible</p>
+      </div>
+    </div>
+
+    <div class="product-card short">
+      <img src="e:\Pagina Web TiendaDeportiva\Foto programaM\shortM.jpg" alt="Short deportivo Femenino">
+      <div class="product-info">
+        <h3>Short AllukaSport</h3>
+        <p><strong>Marca:</strong> ZoldyckSports</p>
+        <p><strong>Precio:</strong> $340.99</p>
+        <p><strong>Talla:</strong> S, M, L, XL</p>
+        <p><strong>Disponibilidad:</strong> Disponible por tiempo limitado</p>
+      </div>
+    </div>
+    <div class="product-card short">
+        <img src="e:\Pagina Web TiendaDeportiva\Foto programaM\shortH.jpg" alt="Short deportivo Masculino">
+        <div class="product-info">
+          <h3>Short PhantomSport</h3>
+          <p><strong>Marca:</strong> ZoldyckSports</p>
+          <p><strong>Precio:</strong> $290.99</p>
+          <p><strong>Talla:</strong> S, M, L, XL</p>
+          <p><strong>Disponibilidad:</strong> Disponible</p>
+        </div>
+      </div>
+  
+      <div class="product-card short">
+        <img src="e:\Pagina Web TiendaDeportiva\Foto programaM\shsort2M.jpg" alt="Short deportivo Femenino">
+        <div class="product-info">
+          <h3>Short AllukaSport</h3>
+          <p><strong>Marca:</strong> ZoldyckSports</p>
+          <p><strong>Precio:</strong> $300.99</p>
+          <p><strong>Talla:</strong> S, M, L, XL</p>
+          <p><strong>Disponibilidad:</strong> Disponible solo  en encargo</p>
+        </div>
+      </div>
+      <div class="product-card short">
+        <img src="https://ae01.alicdn.com/kf/S3ef3bf94dc3b41cabb425ab93dc56dd8G/Pantalones-cortos-deportivos-para-hombre-shorts-para-deportes-fitness-ciclismo-senderismo-al-aire-libre-correr-secado.jpg" alt="Short deportivo Masculino">
+        <div class="product-info">
+          <h3>Short PhantomSport</h3>
+          <p><strong>Marca:</strong> ZoldyckSports</p>
+          <p><strong>Precio:</strong> $254.99</p>
+          <p><strong>Talla:</strong> S, M, L, XL</p>
+          <p><strong>Disponibilidad:</strong> Disponible</p>
+        </div>
+      </div>
+  
+      <div class="product-card short">
+        <img src="https://rematexperu.com/cdn/shop/products/guiadetallas_19_533x.png?v=1669518465" alt="Short deportivo Femenino">
+        <div class="product-info">
+          <h3>Short AllukaSport</h3>
+          <p><strong>Marca:</strong> ZoldyckSports</p>
+          <p><strong>Precio:</strong> $247.99</p>
+          <p><strong>Talla:</strong> S, M, L, XL</p>
+          <p><strong>Disponibilidad:</strong> Disponible tiempo limitado</p>
+        </div>
+      </div>
+
+    <!-- MALLAS -->
+    <div class="product-card malla">
+      <img src="f:\Pagina Web TiendaDeportiva\Foto programaM\malla.png" alt="Mallas deportivo Femenino">
+      <div class="product-info">
+        <h3>Mallas RougeSport</h3>
+        <p><strong>Marca:</strong> ZoldyckSports</p>
+        <p><strong>Precio:</strong> $594.99</p>
+        <p><strong>Talla:</strong> S, M, L</p>
+        <p><strong>Disponibilidad:</strong> Disponible</p>
+      </div>
+    </div>
+    <div class="product-card malla">
+        <img src="f:\Pagina Web TiendaDeportiva\Foto programaM\mallaA.png" alt="Mallas deportivo Femenino">
+        <div class="product-info">
+          <h3>Mallas RougeSport</h3>
+          <p><strong>Marca:</strong> ZoldyckSports</p>
+          <p><strong>Precio:</strong> $473.99</p>
+          <p><strong>Talla:</strong> S, M, L</p>
+          <p><strong>Disponibilidad:</strong> Disponible por tiempo limitado</p>
+        </div>
+      </div>
+      <div class="product-card malla">
+        <img src="https://th.bing.com/th/id/OIP.yDYTnQwSDlAiqzqAx5ln0wHaIa?cb=iwc1&rs=1&pid=ImgDetMain" alt="Mallas deportivo Femenino">
+        <div class="product-info">
+          <h3>Mallas RougeSport</h3>
+          <p><strong>Marca:</strong> ZoldyckSports</p>
+          <p><strong>Precio:</strong> $499.99</p>
+          <p><strong>Talla:</strong> S, M, L</p>
+          <p><strong>Disponibilidad:</strong> Disponible </p>
+        </div>
+      </div>
+      <div class="product-card malla">
+        <img src="f:\Pagina Web TiendaDeportiva\Foto programaM\mallaN.png" alt="Mallas deportivo Femenino">
+        <div class="product-info">
+          <h3>Mallas RougeSport</h3>
+          <p><strong>Marca:</strong> ZoldyckSports</p>
+          <p><strong>Precio:</strong> $630.99</p>
+          <p><strong>Talla:</strong> S, M, L</p>
+          <p><strong>Disponibilidad:</strong> Disponible por tiempo limitado</p>
+        </div>
+      </div>
+      <div class="product-card malla">
+        <img src="f:\Pagina Web TiendaDeportiva\Foto programaM\mallaAM.png" alt="Mallas deportivo Femenino">
+        <div class="product-info">
+          <h3>Mallas RougeSport</h3>
+          <p><strong>Marca:</strong> ZoldyckSports</p>
+          <p><strong>Precio:</strong> $408.99</p>
+          <p><strong>Talla:</strong> S, M, L</p>
+          <p><strong>Disponibilidad:</strong>Agotado</p>
+        </div>
+      </div>
+      <div class="product-card malla">
+        <img src="f:\Pagina Web TiendaDeportiva\Foto programaM\mallasM.png" alt="Mallas deportivo Femenino">
+        <div class="product-info">
+          <h3>Mallas RougeSport</h3>
+          <p><strong>Marca:</strong> ZoldyckSports</p>
+          <p><strong>Precio:</strong> $560.99</p>
+          <p><strong>Talla:</strong> S, M, L</p>
+          <p><strong>Disponibilidad:</strong> Disponible solo en encargo</p>
+        </div>
+      </div>
+
+  
+
+   <!--TENIS -->
+   <div class="product-card tenis">
+    <img src="e:\Pagina Web TiendaDeportiva\Foto programaM\teniNM.jpg" alt="Tenis deportivo Femenino">
+    <div class="product-info">
+      <h3>Mallas RougeSport</h3>
+      <p><strong>Marca:</strong> ZoldyckSports</p>
+      <p><strong>Precio:</strong> $1500</p>
+      <p><strong>Talla:</strong> S, M, L</p>
+      <p><strong>Disponibilidad:</strong> Disponible</p>
+    </div>
+  </div>
+
+<div class="product-card tenis">
+  <img src="e:\Pagina Web TiendaDeportiva\Foto programaM\tH.jpg" alt="Tenis deportivo Femenino">
+  <div class="product-info">
+    <h3>Mallas RougeSport</h3>
+    <p><strong>Marca:</strong> ZoldyckSports</p>
+    <p><strong>Precio:</strong> $1990</p>
+    <p><strong>Talla:</strong> S, M, L</p>
+    <p><strong>Disponibilidad:</strong> Disponible por tiempo limitado</p>
+  </div>
+</div>
+<div class="product-card tenis">
+  <img src="e:\Pagina Web TiendaDeportiva\Foto programaM\tenisHo.jpg" alt="Tenis deportivo Masculino">
+  <div class="product-info">
+    <h3>Mallas RougeSport</h3>
+    <p><strong>Marca:</strong> ZoldyckSports</p>
+    <p><strong>Precio:</strong> $1709</p>
+    <p><strong>Talla:</strong> S, M, L</p>
+    <p><strong>Disponibilidad:</strong> Disponible por encargo</p>
+  </div>
+</div>
+<div class="product-card tenis">
+  <img src="e:\Pagina Web TiendaDeportiva\Foto programaM\tenH.jpg" alt="Tenis deportivo Masculino">
+  <div class="product-info">
+    <h3>Mallas RougeSport</h3>
+    <p><strong>Marca:</strong> ZoldyckSports</p>
+    <p><strong>Precio:</strong> $989.99</p>
+    <p><strong>Talla:</strong> S, M, L</p>
+    <p><strong>Disponibilidad:</strong> Disponible por tiempo limitado</p>
+  </div>
+</div>
+<div class="product-card tenis">
+  <img src="e:\Pagina Web TiendaDeportiva\Foto programaM\TenisM.jpg" alt="Tenis deportivo Femenino">
+  <div class="product-info">
+    <h3>Mallas RougeSport</h3>
+    <p><strong>Marca:</strong> ZoldyckSports</p>
+    <p><strong>Precio:</strong> $2000</p>
+    <p><strong>Talla:</strong> S, M, L</p>
+    <p><strong>Disponibilidad:</strong> Disponible en encargo</p>
+  </div>
+</div>
+<div class="product-card tenis">
+  <img src="e:\Pagina Web TiendaDeportiva\Foto programaM\tZH.jpg" alt="Tenis deportivo Masculino">
+  <div class="product-info">
+    <h3>Mallas RougeSport</h3>
+    <p><strong>Marca:</strong> ZoldyckSports</p>
+    <p><strong>Precio:</strong> $996.99</p>
+    <p><strong>Talla:</strong> S, M, L</p>
+    <p><strong>Disponibilidad:</strong>Agotado </p>
+  </div>
+</div>
+<div class="product-card tenis">
+  <img src="e:\Pagina Web TiendaDeportiva\Foto programaM\teeM.jpg" alt="Tenis deportivo Femenino">
+  <div class="product-info">
+    <h3>Mallas RougeSport</h3>
+    <p><strong>Marca:</strong> ZoldyckSports</p>
+    <p><strong>Precio:</strong> $1,200</p>
+    <p><strong>Talla:</strong> S, M, L</p>
+    <p><strong>Disponibilidad:</strong> Disponible </p>
+  </div>
+</div>
+<div class="product-card tenis">
+  <img src="e:\Pagina Web TiendaDeportiva\Foto programaM\tenisH.jpg" alt="Tenis deportivo Masculino">
+  <div class="product-info">
+    <h3>Mallas RougeSport</h3>
+    <p><strong>Marca:</strong> ZoldyckSports</p>
+    <p><strong>Precio:</strong> $1,700</p>
+    <p><strong>Talla:</strong> S, M, L</p>
+    <p><strong>Disponibilidad:</strong> Disponible por tiempo limitado</p>
+  </div>
+</div>
+</div>
+
+
+
+
+
+  <footer>
+    <p>© 2025 ZoldyckSports. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    function filtrarProductos(categoria) {
+      const productos = document.querySelectorAll('.product-card');
+      productos.forEach(producto => {
+        if (categoria === 'todos') {
+          producto.style.display = 'block';
+        } else {
+          producto.style.display = producto.classList.contains(categoria) ? 'block' : 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>

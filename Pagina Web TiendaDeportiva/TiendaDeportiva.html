@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tienda de Ropa Deportiva</title>
+  <style>
+   
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #d8ecff;
+      color: #000000;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #0f4e61; 
+      color: rgb(222, 209, 252);
+      padding: 20px;
+      text-align: center;
+    }
+
+    .banner {
+      background-image: url('Banner.jpg'); 
+      background-size: cover;
+      background-position: center;
+      height: 250px;
+    }
+
+    .product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  padding: 10px;
+}
+
+
+    .product-card {
+      background-color: rgb(106, 168, 184);
+      border: 3px solid #002064;
+      border-radius: 10px;
+      margin: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    
+
+
+    .product-card img {
+      width: 100%;
+      border-radius: 5px;
+      max-width: 300px; 
+  margin: auto;
+    }
+
+    .product-info h3 {
+      margin: 10px 0 5px;
+    }
+
+    .product-info p {
+      margin: 5px 0;
+    }
+    
+    footer {
+      background-color: #09414b;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+
+  <header>
+    <h1><b>ZoldyckSports</b></h1>
+    <h3>Ropa deportiva de alto rendimiento para atletas y entusiastas</h3>
+  </header>
+
+  <!-- 📸 BANNER VISUAL -->
+  <div class="banner"></div>
+
+  <div class="product-container">
+
+
+    <div class="product-card">
+      <img src="https://th.bing.com/th/id/OIP.YWSJpIq2sYAm0CfAyxZXlgHaHa?cb=iwc1&rs=1&pid=ImgDetMain" alt="Camiseta deportiva unisex">
+      <div class="product-info">
+        <h3>Camiseta TricepSport</h3>
+        <p><strong>Marca:</strong> ZoldyckSports</p>
+        <p><strong>Precio:</strong> $149.99</p>
+        <p><strong>Talla:</strong>XS, S, M, L, XL</p>
+        <p><strong>Disponibilidad:</strong> Disponible </p>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://racketball.vteximg.com.br/arquivos/ids/207332-640-800/03939-CAMISETA-DEPORTIVA-MANGA-CORTA-GRIS-OSCURO-HOMBRE-CAMISETAS-RACKETBALL-7701650861203-1.jpg?v=637892710577830000" 
+      alt="Camiseta deportiva Masculina">
+      <div class="product-info">
+        <h3>Camiseta VellSport</h3>
+        <p><strong>Marca:</strong> ZoldyckSports</p>
+        <p><strong>Precio:</strong> $269.99</p>
+        <p><strong>Talla:</strong> S, M, L, XL</p>
+        <p><strong>Disponibilidad:</strong> Disponible</p>
+      </div>
+    </div>
+ 
+
+    <div class="product-card">
+      <img src="https://th.bing.com/th/id/OIP.ELVI4EKosIiMT_HIY-POsgHaHa?cb=iwc1&rs=1&pid=ImgDetMain" alt="Camiseta deportiva Femenina">
+      <div class="product-info">
+        <h3>Camiseta KallutoSport</h3>
+        <p><strong>Marca:</strong> ZoldyckSports</p>
+        <p><strong>Precio:</strong> $269.99</p>
+        <p><strong>Talla:</strong> XS, S, M, L, XL</p>
+        <p><strong>Disponibilidad:</strong> Agotado</p>
+      </div>
+    </div>
+  
+  
+    <div class="product-card">
+      <img src=
+      "https://ae01.alicdn.com/kf/S3ef3bf94dc3b41cabb425ab93dc56dd8G/Pantalones-cortos-deportivos-para-hombre-shorts-para-deportes-fitness-ciclismo-senderismo-al-aire-libre-correr-secado.jpg" 
+      alt="Short deportivo Masculino">
+      <div class="product-info">
+        <h3>Short PhantomSport</h3>
+        <p><strong>Marca:</strong> ZoldyckSports</p>
+        <p><strong>Precio:</strong> $254.99</p>
+        <p><strong>Talla:</strong> S, M, L, XL</p>
+        <p><strong>Disponibilidad:</strong> Disponible</p>
+      </div>
+    </div>
+ 
+
+  <div class="product-card">
+    <img src="https://rematexperu.com/cdn/shop/products/guiadetallas_19_533x.png?v=1669518465" alt="Short deportivo Femenino">
+    <div class="product-info">
+      <h3>Short AllukaSport</h3>
+      <p><strong>Marca:</strong> ZoldyckSports</p>
+      <p><strong>Precio:</strong> $244.99</p>
+      <p><strong>Talla:</strong> S, M, L, XL</p>
+      <p><strong>Disponibilidad:</strong> Disponible por tiempo limtado</p>
+    </div>
+  </div>
+
+
+<div class="product-card">
+  <img src="https://th.bing.com/th/id/OIP.yDYTnQwSDlAiqzqAx5ln0wHaIa?cb=iwc1&rs=1&pid=ImgDetMain" alt="Mallas deportivo Femenino">
+  <div class="product-info">
+    <h3>Mallas RougeSport</h3>
+    <p><strong>Marca:</strong> ZoldyckSports</p>
+    <p><strong>Precio:</strong> $499.99</p>
+    <p><strong>Talla:</strong> S, M, L,</p>
+    <p><strong>Disponibilidad:</strong> Disponible por tiempo limtado</p>
+  </div>
+</div>
+</div>
+
+<h2 style="text-align: center; margin-top: 40px;"> Agregar al Carrito</h2>
+<div style="width: 80%; margin: auto; background-color: #f0f8ff; padding: 20px; border-radius: 10px;">
+  <form id="cart-form" style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: space-between;">
+    <input type="text" id="product-name" placeholder="Producto" required style="flex: 2; padding: 10px;">
+    <input type="text" id="product-size" placeholder="Talla" required style="flex: 1; padding: 10px;">
+    <input type="number" id="product-price" placeholder="Precio" required style="flex: 1; padding: 10px;">
+    <input type="number" id="product-qty" placeholder="Cantidad" value="1" min="1" required style="flex: 1; padding: 10px;">
+    <button type="submit" style="padding: 10px 20px; background-color: #0f4e61; color: white; border: none; border-radius: 5px;">Agregar</button>
+  </form>
+</div>
+
+
+<h2 style="text-align: center;"> Carrito de Compras</h2>
+<table style="width: 80%; margin: 20px auto; border-collapse: collapse; background-color: #ffffff; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+  <thead style="background-color: #0f4e61; color: white;">
+    <tr>
+      <th style="padding: 10px; border: 1px solid #ccc;">Producto</th>
+      <th style="padding: 10px; border: 1px solid #ccc;">Talla</th>
+      <th style="padding: 10px; border: 1px solid #ccc;">Precio</th>
+      <th style="padding: 10px; border: 1px solid #ccc;">Cantidad</th>
+      <th style="padding: 10px; border: 1px solid #ccc;">Total</th>
+      <th style="padding: 10px; border: 1px solid #ccc;">Eliminar</th>
+    </tr>
+  </thead>
+  <tbody id="cart-body">
+    
+  </tbody>
+</table>
+
+<div style="width: 80%; margin: 20px auto; text-align: right;">
+  <button onclick="vaciarCarrito()" style="padding: 10px 20px; background-color: #c0392b; color: white; border: none; border-radius: 5px;">Vaciar Carrito</button>
+</div>
+
+
+  <footer>
+    <p>2025 ZoldyckSports - Todos los derechos y creditos reservados para la alumna Elena Isaura Gutierrez Pacheco<br> 
+      de CECyTeJ Cocula Aula Externa Ayotitlán</p>
+  </footer>
+
+  <script>
+    
+    document.getElementById('cart-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+  
+      const name = document.getElementById('product-name').value;
+      const size = document.getElementById('product-size').value;
+      const price = parseFloat(document.getElementById('product-price').value);
+      const qty = parseInt(document.getElementById('product-qty').value);
+      const total = (price * qty).toFixed(2);
+  
+      const table = document.getElementById('cart-body');
+      const row = table.insertRow();
+  
+      row.innerHTML = `
+        <td style="padding:10px; border:1px solid #ccc;">${name}</td>
+        <td style="padding:10px; border:1px solid #ccc;">${size}</td>
+        <td style="padding:10px; border:1px solid #ccc;">$${price.toFixed(2)}</td>
+        <td style="padding:10px; border:1px solid #ccc;">${qty}</td>
+        <td style="padding:10px; border:1px solid #ccc;">$${total}</td>
+        <td style="padding:10px; border:1px solid #ccc; text-align: center;">
+          <button onclick="eliminarProducto(this)" style="padding: 5px 10px; background-color: #e74c3c; color: white; border: none; border-radius: 5px;">X</button>
+        </td>
+      `;
+  
+      document.getElementById('cart-form').reset();
+    });
+  
+    // Función para eliminar una fila específica
+    function eliminarProducto(boton) {
+      const fila = boton.parentElement.parentElement;
+      fila.remove();
+    }
+  
+    // Función para vaciar todo el carrito
+    function vaciarCarrito() {
+      const tabla = document.getElementById('cart-body');
+      tabla.innerHTML = ""; // Borra todas las filas
+    }
+  </script>
+  
+  
+
+</body>
+</html>
